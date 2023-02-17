@@ -52,6 +52,8 @@
             fis = new FileInputStream("파일위치");
             BufferedInputStream bis = new BufferedInputStream(fis);
 
+----------------------------------------------------------------------------------------------
+
 4. 문자 기반 스트림
     : 16bit의 문자나 문자열을 읽고 쓰는 스트림
 
@@ -78,3 +80,11 @@
     1) 문자 보조 기반 스트림의 종류
     - '필터'를 이용한 입출력         : FilterReader / FilterWriter
     - '버퍼'를 이용한 입출력         : BufferedReader / BufferedWriter
+
+    2) 문자 보조 기반 스트림의 활용
+        ex)
+            FileReader fr = null;
+            fr = new FileReader("파일 경로");
+            BufferedReader br = new BufferedReader(fr);
+
+
